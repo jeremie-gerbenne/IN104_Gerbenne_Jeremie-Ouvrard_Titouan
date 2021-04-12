@@ -21,8 +21,8 @@ class FastFood:
 
 class Tacos(FastFood):
     def tacosAttributes(self, meat, sauce):
-        self.meat = meat
-        self.sauce = sauce
+        self.meat = meat #meat is a list of str
+        self.sauce = sauce #sauce is a str
 
     def __str__(self):
         meats = ""
