@@ -33,8 +33,8 @@ class Tacos(FastFood):
     def get_ingredient(self)
         return [ self.meat[i] for i in range(len(self.meat)), self.sauce[j] for j in range(len(self.sauce))]
 
-class Burger(FastFood):
-    def burgerAttributes(self,name,sauce)
+class Burgers(FastFood):
+    def burgersAttributes(self,name,sauce)
         self.name = name
         self.sauce = sauce
 
