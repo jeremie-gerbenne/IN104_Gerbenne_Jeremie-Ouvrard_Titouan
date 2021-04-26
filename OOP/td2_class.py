@@ -30,11 +30,11 @@ class Tacos(FastFood):
             meats += meat +" "
         return "It is the tacos of order number " + str(get_orderNumber()) + "with : " + meats + "and : " + self.sauce
 
-    def get_ingredient(self)
-        return [ self.meat[i] for i in range(len(self.meat)), self.sauce[j] for j in range(len(self.sauce))]
+    def get_ingredient(self):
+        return [ self.meat[i] for i in range(len(self.meat))]+[ self.sauce[j] for j in range(len(self.sauce))]
 
 class Burgers(FastFood):
-    def burgersAttributes(self,name,sauce)
+    def burgersAttributes(self,name,sauce):
         self.name = name
         self.sauce = sauce
 
